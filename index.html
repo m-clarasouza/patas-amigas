@@ -24,6 +24,103 @@
         </div>
     </header>
 
+    <main class="contentor">
+
+        <section class="destaque">
+            <h1>Dá uma casa a quem só precisa de carinho</h1>
+            <p>Somos uma associação do Porto que acolhe cães, gatos e coelhos à espera de uma família.</p>
+            <a href="#animais" class="botao">Conhecer Animais</a>
+        </section>
+
+        <section id="animais" class="seccao-animais">
+            <h2>Animais para adoção</h2>
+            <div class="cartoes-container">
+
+                <article class="cartao">
+                    <img src="img/cao.svg" alt="Foto de um cão">
+                    <h3>Rex</h3>
+                    <p>Cão, 3 anos. Adora passear e brincar com a bola</p>
+                </article>
+
+                <article class="cartao">
+                    <img src="img/gato.svg" alt="Foto de um gato">
+                    <h3>Mia</h3>
+                    <p>Gata, 2 anos. Tranquila, gosta de dormir ao sol.</p>
+                </article>
+
+                <article class="cartao">
+                    <img src="img/coelho.svg" alt="Foto de um coelho">
+                    <h3>Tambor</h3>
+                    <p>Coelho, 1 ano. Curioso e muito meigo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="adotar" class="seccao-adotar">
+            <h2>Como Adotar</h2>
+            <ol>
+                <li>Escolhe o animal que mais combina contigo.</li>
+                <li>Preenche o formulário de contacto.</li>
+                <li>Visita-nos para o conheceres pessoalmente.</li>
+                <li>Leva o teu amigo para a casa.</li>
+            </ol>
+        </section>
+
+        <section id="visitas" class="seccao-visitas">
+            <h2>Horário de visitas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda a Sexta</td>
+                        <td>14:00 às 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10:00 às 13:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Encerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto" class="seccao-contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="animal">Animal></label>
+                <select id="animal" name="animal">
+                    <option value="rex">Rex</option>
+                    <option value="mia">Mia</option>
+                    <option value="tambor">Tambor</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            
+
+                <button type="submit" class="botao">Enviar</button>
+                </form> 
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Patas Amigas.Rua das Flores, 123, Porto.</p>
+    </footer>
+
     
 </body>
 </html>
