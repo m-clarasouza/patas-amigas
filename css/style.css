@@ -1,7 +1,7 @@
 body{
-    font-family: Arial, sans-serif;
-    color: #1d1148;
+    font-family: Arial, Helvetica, sans-serif ;
     background-color: #f7f7f9;
+    color:#1d1148;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -15,11 +15,13 @@ body{
 }
 
 header{
-    background-color: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
+   background-color: #ffffff;
+   border-bottom: 1px solid #e2e8f0;
 }
 
 .cabeçalho{
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +31,7 @@ header{
 .logo{
     font-weight: bold;
     font-size: 1.2rem;
+
 }
 
 .logo span{
@@ -42,12 +45,13 @@ nav ul{
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+
 }
 
 nav a{
     text-decoration: none;
-    color: #1d1148;
     font-size: 0.9rem;
+    color: #1d1148;
 }
 
 nav a:hover{
@@ -59,7 +63,6 @@ nav a:hover{
     color: #ffffff;
     text-align: center;
     padding: 50px 20px;
-    margin-bottom: 30px;
 }
 
 .destaque h1{
@@ -87,10 +90,10 @@ nav a:hover{
 }
 
 .botao:hover{
-    background-color: #88006a;
+    background-color: #b8006a;
 }
 
-.seccao{
+.seccao-animais, .seccao-contacto, .seccao-adotar, .seccao-visitas{
     margin-bottom: 40px;
 }
 
@@ -103,6 +106,7 @@ h2{
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cartao {
@@ -115,18 +119,6 @@ h2{
     text-align: center;
     background-color: #ffffff;
     position: relative;
-}
-
-.selo-novo {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    background-color: #e40084;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 19px;
-    font-size: 0.8rem;
-    font-weight: bold;
 }
 
 .cartao img{
@@ -147,6 +139,19 @@ h2{
     margin: 0;
 }
 
+.selo-novo {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: #e40084;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 19px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
 #adotar ol{
     font-size: 1rem;
     padding-left: 20px;
@@ -159,9 +164,9 @@ h2{
 table{
     background-color: #ffffff;
     width: 100%;
+    max-width: 500px;
     border-collapse: collapse;
     margin-top: 20px;
-    max-width: 00px;
 }
 
 th, td{
@@ -173,9 +178,7 @@ th, td{
 th{
     background-color: #1d1148;
     color: #ffffff;
-    min-width: 125px;
     text-align: left;
-    
 }
 
 .seccao-contacto form{
@@ -194,6 +197,7 @@ form{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
+
 form label{
     font-weight: bold;
     margin-bottom: 5px;
@@ -202,16 +206,6 @@ form label{
     font-size: 0.9rem;
 }
 
-.seccao-contacto input, .seccao-contacto textarea, .seccao-contacto select{
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family:inherit;
-}
-
-form label first-of-type{
-    margin-top: 0;
-}
 
 form input, form textarea, form select{
     width: 100%;
